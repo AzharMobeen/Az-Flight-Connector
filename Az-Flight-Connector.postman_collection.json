@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "a0447975-d938-4e7c-966a-2f85034117e9",
+		"name": "Az-Flight-Connector",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Az-Api-Gateway",
+			"item": [
+				{
+					"name": "OND wise connection flights",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"depAirport\": \"BOM\",\n    \"arrAirport\": \"JFK\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9999/api/flight/ondWiseConnectionFlights",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"flight",
+								"ondWiseConnectionFlights"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetchAllAirports",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9999/api/airport/fetchAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"airport",
+								"fetchAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Airport",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"arptCd\": \"LHE\",\n    \"arptName\": \"Lahore International Airport\",\n    \"cityName\": \"Lahore\",\n    \"coordinates\": \"19°05′19″N 72°52′05″E\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9999/api/airport/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"airport",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Airport",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"arptCd\": \"LHE\",\n    \"arptName\": \"Ilama Iqbal International Airport\",\n    \"cityName\": \"Lahore\",\n    \"coordinates\": \"19°05′19″N 72°52′05″E\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9999/api/airport",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"airport"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Airport By code",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9999/api/airport/LHE",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"airport",
+								"LHE"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Airport",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9999/api/airport/LHE",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"airport",
+								"LHE"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Az-Master-data",
+			"item": [
+				{
+					"name": "fetchAllAirports",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/airport/fetchAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"airport",
+								"fetchAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Airport",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"arptCd\": \"LHE\",\n    \"arptName\": \"Lahore International Airport\",\n    \"cityName\": \"Lahore\",\n    \"coordinates\": \"19°05′19″N 72°52′05″E\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/airport/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"airport",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Airport",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"arptCd\": \"LHE\",\n    \"arptName\": \"Ilama Iqbal International Airport\",\n    \"cityName\": \"Lahore\",\n    \"coordinates\": \"19°05′19″N 72°52′05″E\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/airport",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"airport"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Airport",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/airport/LHE",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"airport",
+								"LHE"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Airport By code",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/airport/LHE",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"airport",
+								"LHE"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Az-flight-connector-builder",
+			"item": [
+				{
+					"name": "OND wise connection flights",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"depAirport\":\"BOM\",\"arrAirport\":\"JFK\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/flight/ondWiseConnectionFlights",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"flight",
+								"ondWiseConnectionFlights"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

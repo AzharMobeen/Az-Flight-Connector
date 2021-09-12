@@ -1,0 +1,17 @@
+server:
+  port: 8084
+
+spring:
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    platform: h2
+    url: jdbc:h2:mem:az-master-data-db
+    username: sa
+    password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: create

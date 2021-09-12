@@ -1,0 +1,17 @@
+server:
+  port: 8083
+
+spring:
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    platform: h2
+    url: jdbc:h2:mem:az-flight-db
+    username: sa
+    password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: create

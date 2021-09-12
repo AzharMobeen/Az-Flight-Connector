@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="az-flight-connector-builder" />
+        <module name="az-api-gateway" />
+        <module name="az-master-data" />
+        <module name="az-reactJs-app" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="az-frontend-app" target="1.8" />
+      <module name="az-spring-boot-based-reactjs-app" target="8" />
+      <module name="az-spring-boot-bassed-reactjs-app" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="az-api-gateway" options="-parameters" />
+      <module name="az-flight-connector-builder" options="-parameters" />
+      <module name="az-frontend-app" options="-parameters" />
+      <module name="az-master-data" options="-parameters" />
+      <module name="az-reactJs-app" options="-parameters" />
+      <module name="az-spring-boot-based-reactjs-app" options="-parameters" />
+      <module name="az-spring-boot-bassed-reactjs-app" options="-parameters" />
+    </option>
+  </component>
+</project>
